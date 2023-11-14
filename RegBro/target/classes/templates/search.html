@@ -1,0 +1,31 @@
+<!-- src/main/resources/templates/search.html -->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewery Search</title>
+    <!-- Add your CSS stylesheets here -->
+</head>
+<body>
+    <h1>Brewery Search</h1>
+
+    <form action="/search" method="post">
+        <label for="searchType">Search Type:</label>
+        <select id="searchType" name="searchType" required>
+            <option value="by_city">By City</option>
+            <option value="by_name">By Name</option>
+            <option value="by_type">By Type</option>
+        </select>
+
+        <label for="query">Query:</label>
+        <input type="text" id="query" name="query" required>
+
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Display search results here -->
+
+    <!-- Add your JavaScript scripts here -->
+</body>
+</html>
